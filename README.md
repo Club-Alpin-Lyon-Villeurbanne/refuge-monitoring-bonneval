@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 > Système de monitoring simple et fiable pour refuges de montagne isolés,
-> développé par le [Club Alpin de Lyon](https://www.caflyonvilleurbanne.fr/).
+> développé par le [Club Alpin de Lyon](https://www.clubalpinlyon.fr/).
 
 ## Pourquoi ce projet ?
 
