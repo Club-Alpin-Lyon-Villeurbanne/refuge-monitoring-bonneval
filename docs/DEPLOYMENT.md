@@ -16,8 +16,8 @@
 
 | Check | Period | Grace | Description |
 |-------|--------|-------|-------------|
-| pi-bonneval-wifi | 5 minutes | 10 minutes | Pi sur onduleur (test WiFi) |
-| pi-bonneval-elec | 5 minutes | 10 minutes | Pi sur secteur (test électricité) |
+| pi-bonneval-wifi | 1 minute | 2 minutes | Pi sur onduleur (test WiFi) |
+| pi-bonneval-elec | 1 minute | 2 minutes | Pi sur secteur (test électricité) |
 
 4. Copier les URLs de ping pour chaque check
 

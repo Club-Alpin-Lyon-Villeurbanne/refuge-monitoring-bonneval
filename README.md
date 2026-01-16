@@ -16,7 +16,7 @@ Avec seulement **2 Raspberry Pi Zero** et un compte gratuit [healthchecks.io](ht
 
 ## Comment ça marche ?
 
-Deux Pi envoient un heartbeat toutes les 5 minutes. Selon lequel répond, on sait ce qui se passe :
+Deux Pi envoient un heartbeat toutes les minutes. Selon lequel répond, on sait ce qui se passe :
 
 | Pi-WIFI | Pi-ELEC | Diagnostic |
 |---------|---------|------------|

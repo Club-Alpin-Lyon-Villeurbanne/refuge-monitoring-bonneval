@@ -32,11 +32,12 @@ echo "Hostname: ${HOSTNAME}"
 echo "Healthcheck URL: ${HC_URL}"
 echo ""
 
-# --- Installation des paquets ---
-echo "[1/7] Installation des paquets..."
+# --- Mise à jour et installation des paquets ---
+echo "[1/7] Mise à jour système et installation des paquets..."
 export DEBIAN_FRONTEND=noninteractive
 apt-get update -qq
-apt-get install -y curl watchdog
+apt-get full-upgrade -y
+apt-get install -y curl watchdog htop tmux mtr
 
 # --- Hostname ---
 echo "[2/7] Configuration du hostname..."
@@ -95,11 +96,11 @@ SERVICE
 
 cat > /etc/systemd/system/heartbeat.timer << 'TIMER'
 [Unit]
-Description=Run heartbeat every 5 minutes
+Description=Run heartbeat every minute
 
 [Timer]
 OnBootSec=30
-OnUnitActiveSec=5min
+OnUnitActiveSec=1min
 AccuracySec=10s
 
 [Install]
@@ -134,7 +135,7 @@ echo ""
 echo "=== Installation terminée ==="
 echo ""
 echo "Hostname:   ${HOSTNAME}"
-echo "Heartbeat:  toutes les 5 minutes"
+echo "Heartbeat:  toutes les minutes"
 echo "URL:        ${HC_URL}"
 echo ""
 echo "État des services :"
